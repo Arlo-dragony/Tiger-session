@@ -62,12 +62,12 @@ router.get('/', async (req, res) => {
 put the above ID in the sessID variable when deploying .
 Use this Session ID for all bots by ARLODRAGON.
 ╔═════◇
-║       『••• ARLODRAGON TECH•••』
-║ *Channel:* _https://whatsapp.com/channel/0029VaNPPwR30LKQk437x51Q
-║ *Main GC:* _https://chat.whatsapp.com/I5xIShFtrk43tfaWEmppNH
-║ *Github:* _https://github.com/Arlo-dragony 
-║ *Note :*_ARLODRAGON IS HERE TO HELP WA.ME+254702713600 _
-║ _*Follow Me and Star my repo for more .*_
+║       𓅓 𝚻𝚰𝐆𝚵𝚪 𝐑𝚫𝐃𝚰𝚯𝚫𝐂𝚻𝚰𝛁𝚵 𓅓
+║ ❖Channel:* _https://whatsapp.com/channel/0029VaNPPwR30LKQk437x51Q
+║ ❖Main GC:* _https://chat.whatsapp.com/I5xIShFtrk43tfaWEmppNH
+║ ❖Github:* _https://github.com/Arlo-dragony 
+║ ❖𓅓𝚻𝚰𝐆𝚵𝚪 𝐑𝚫𝐃𝚰𝚯𝚫𝐂𝚻𝚰𝛁𝚵 
+║ ❖Follow Me and Star my repo for more .*_
 ╚════════════════════════╝`
  await TAIRA_TECH_SESSION.sendMessage(TAIRA_TECH_SESSION.user.id,{text:messg },{quoted:session})
  
