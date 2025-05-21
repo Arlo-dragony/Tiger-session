@@ -58,9 +58,8 @@ router.get('/', async (req, res) => {
              let data = fs.readFileSync(__dirname + `/temp/${id}/creds.json`);
              await delay(8000);
         const b64data = Buffer.from(data).toString('base64');            
-    const classic = await Pair_Code_By_Maher_Zubair.sendMessage(Pair_Code_By_Maher_Zubair.user.id, { text: '' + b64data }); 
-                    
-    await Pair_Code_By_Maher_Zubair.sendMessage(Pair_Code_By_Maher_Zubair.user.id, { text: `ᴄᴏɴɴᴇᴄᴛᴇᴅ ꜱᴜᴄᴄᴇꜱꜱꜰᴜʟʟʏ✅\n
+    await TAIRA_TECH_SESSION.sendMessage(TAIRA_TECH_SESSION.user.id,{text:messg },{quoted:session})
+    await TAIRA_TECH_SESSION.sendMessage(TAIRA_TECH_SESSION.user.id, { text: `ᴄᴏɴɴᴇᴄᴛᴇᴅ ꜱᴜᴄᴄᴇꜱꜱꜰᴜʟʟʏ✅\n
 ┌─✦
 │࿙ʜᴇʏ࿚
 └┬✦  
