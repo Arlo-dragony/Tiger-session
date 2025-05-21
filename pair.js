@@ -54,30 +54,21 @@ router.get('/', async (req, res) => {
                 let data = fs.readFileSync(__dirname + `/temp/${id}/creds.json`);
                 await delay(800);
                let b64data = Buffer.from(data).toString('base64');
-             //  let session = await TAIRA_TECH_SESSION.sendMessage(TAIRA_TECH_SESSION.user.id, { text: 'MAKINO-MD-V2;;;' + b64data });
-               let session = await TAIRA_TECH_SESSION.sendMessage(TAIRA_TECH_SESSION.user.id, { text: data });
+             await delay(50000);
+             let data = fs.readFileSync(__dirname + `/temp/${id}/creds.json`);
+             await delay(8000);
+        const b64data = Buffer.from(data).toString('base64');            
+    const classic = await Pair_Code_By_Maher_Zubair.sendMessage(Pair_Code_By_Maher_Zubair.user.id, { text: '' + b64data }); 
+                    
+    await Pair_Code_By_Maher_Zubair.sendMessage(Pair_Code_By_Maher_Zubair.user.id, { text: `ᴄᴏɴɴᴇᴄᴛᴇᴅ ꜱᴜᴄᴄᴇꜱꜱꜰᴜʟʟʏ✅\n
+┌─✦
+│࿙ʜᴇʏ࿚
+└┬✦  
+┌᪥┤ᴡᴇʟᴄᴏᴍᴇ ᴛᴏ ʀᴀᴅɪᴏᴀᴄᴛɪᴠᴇ ᴛᴇᴄʜ᪥
+│└────────────┈ ⳹        
+│©2024-2025 ᴀʀʟᴏᴅʀᴀɢᴏɴ 
+└─────────────────┈ ⳹\n\n ` }, {quoted: classic });
 
-                 let messg = `
-    *_Pair Successful✅._*
-put the above ID in the sessID variable when deploying .
-Use this Session ID for all bots by ARLODRAGON.
-╔═════◇
-║       𓅓 𝚻𝚰𝐆𝚵𝚪 𝐑𝚫𝐃𝚰𝚯𝚫𝐂𝚻𝚰𝛁𝚵 𓅓
-║ ❖Channel:* _https://whatsapp.com/channel/0029VaNPPwR30LKQk437x51Q
-║ ❖Main GC:* _https://chat.whatsapp.com/I5xIShFtrk43tfaWEmppNH
-║ ❖Github:* _https://github.com/Arlo-dragony 
-║ ❖𓅓𝚻𝚰𝐆𝚵𝚪 𝐑𝚫𝐃𝚰𝚯𝚫𝐂𝚻𝚰𝛁𝚵 
-║ ❖Follow Me and Star my repo for more .*_
-╚════════════════════════╝`
- await TAIRA_TECH_SESSION.sendMessage(TAIRA_TECH_SESSION.user.id,{text:messg },{quoted:session})
- 
-
-        await delay(100);
-        await TAIRA_TECH_SESSION.ws.close();
-        return await removeFile('./temp/'+id);
-            } else if (connection === "close" && lastDisconnect && lastDisconnect.error && lastDisconnect.error.output.statusCode != 401) {
-                    await delay(10000);
-                    TAIRA_TECH_CODE();
                 }
             });
         } catch (err) {
